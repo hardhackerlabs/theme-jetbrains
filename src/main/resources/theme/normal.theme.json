@@ -1,0 +1,11 @@
+{
+  "name": "Hard Hacker",
+  "dark": true,
+  "author": "HardHacker Labs",
+  "editorScheme": "/theme/normal.xml",
+  "colors": {
+    "accentColor": "#e965a5"
+  },
+  "ui": {
+  }
+}
