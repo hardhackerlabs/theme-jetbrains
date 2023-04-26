@@ -1,4 +1,4 @@
-const { Schema } = require("./sdk.js");
+const { Schema } = require("./sdk");
 const tinycolor = require("tinycolor2");
 
 function getSchema(name, colorConfig, controlsOpt) {
@@ -14,7 +14,7 @@ function getSchema(name, colorConfig, controlsOpt) {
   const schema = new Schema(name, "Darcula", "142");
 
   // colors
-  schema.addColor("SELECTION_BACKGROUND", "3E3851");
+  schema.addColor("SELECTION_BACKGROUND", colors.highlightBackground);
   schema.addColor("CARET_ROW_COLOR", colors.hoverBackground);
   schema.addColor("CONSOLE_BACKGROUND_KEY", colors.background);
   schema.addColor("GUTTER_BACKGROUND", colors.background);
@@ -31,6 +31,9 @@ function getSchema(name, colorConfig, controlsOpt) {
   schema.addColor("DELETED_LINES_COLOR", tinycolor.mix(originColors.black, originColors.errorRed, 60).toHex());
   schema.addColor("MODIFIED_LINES_COLOR", tinycolor.mix(originColors.black, originColors.blue.clone().saturate(100), 60).toHex());
   schema.addColor("WHITESPACES_MODIFIED_LINES_COLOR", tinycolor.mix(originColors.black, originColors.yellow, 60).toHex());
+  schema.addColor("TAB_UNDERLINE", colors.themePrimary);
+  schema.addColor("ScrollBar.Mac.hoverThumbColor", originColors.red.clone().setAlpha(0.5).toHex8());
+  schema.addColor("ScrollBar.Mac.hoverThumbColor", colors.themePrimary);
   
 
   // attributes
@@ -57,6 +60,7 @@ function getSchema(name, colorConfig, controlsOpt) {
 
   schema.addAttribute("SEARCH_RESULT_ATTRIBUTES", { BACKGROUND: "4F4F82" }); // TODO no idea
   schema.addAttribute("MATCHED_BRACE_ATTRIBUTES", { BACKGROUND: tinycolor.mix(originColors.black, originColors.cyan, 20).toHex() });
+  schema.addAttribute("UNMATCHED_BRACE_ATTRIBUTES", { BACKGROUND: tinycolor.mix(originColors.black, originColors.errorRed, 20).toHex() });
   schema.addAttribute("TEXT_SEARCH_RESULT_ATTRIBUTES", {
     BACKGROUND: tinycolor.mix(originColors.black, originColors.cyan, 20).toHex(),
     ERROR_STRIPE_COLOR: tinycolor.mix(originColors.black, originColors.cyan, 20).toHex(),
@@ -65,7 +69,7 @@ function getSchema(name, colorConfig, controlsOpt) {
     BACKGROUND: "623062",
   });
 
-  schema.addAttribute("FOLDED_TEXT_ATTRIBUTES", { FOREGROUND: colors.secondaryText, BACKGROUND: colors.darkerBackground });
+  schema.addAttribute("FOLDED_TEXT_ATTRIBUTES", { FOREGROUND: colors.secondaryText, BACKGROUND: colors.hoverBackground });
   schema.addAttribute("INJECTED_LANGUAGE_FRAGMENT", { BACKGROUND: colors.darkerBackground });
 
   schema.addAttribute("ERRORS_ATTRIBUTES", {
@@ -100,6 +104,14 @@ function getSchema(name, colorConfig, controlsOpt) {
     EFFECT_TYPE: "2",
     EFFECT_COLOR: colors.cyan,
   });
+  schema.addAttribute("TAG_ATTR_KEY", { FOREGROUND: colors.keyword });
+  schema.addAttribute("TEXT", { FOREGROUND: colors.text, BACKGROUND: colors.background });
+  schema.addAttribute("TODO_DEFAULT_ATTRIBUTES", {
+    FOREGROUND: colors.themePrimary,
+    FONT_TYPE: "2",
+    ERROR_STRIPE_COLOR: colors.themePrimary,
+  });
+  schema.addAttribute("TYPEDEF", { FOREGROUND: colors.variable });
 
   // default
   schema.addAttribute("DEFAULT_LABEL", { FOREGROUND: colors.string });
@@ -589,7 +601,6 @@ function getSchema(name, colorConfig, controlsOpt) {
   schema.addBaseAttribute("LOCAL_VARIABLE_ATTRIBUTES", "TEXT");
   schema.addAttribute("MACRONAME", { FOREGROUND: colors.method });
   schema.addBaseAttribute("MACRO_PARAMETER", "TEXT");
-  schema.addAttribute("MATCHED_BRACE_ATTRIBUTES", { BACKGROUND: "3A6DA0" });
   schema.addAttribute("NOT_USED_ELEMENT_ATTRIBUTES", { FOREGROUND: "80807F" });
   schema.addAttribute("OC.BADCHARACTER", { FOREGROUND: colors.method });
   schema.addAttribute("OC.BLOCK_COMMENT", {
@@ -794,15 +805,6 @@ function getSchema(name, colorConfig, controlsOpt) {
   });
   schema.addBaseAttribute("SPY-JS.VALUE_HINT", "TEXT");
   
-  schema.addAttribute("TAG_ATTR_KEY", { FOREGROUND: colors.keyword });
-  schema.addAttribute("TEXT", { FOREGROUND: colors.text, BACKGROUND: colors.background });
-  schema.addAttribute("TODO_DEFAULT_ATTRIBUTES", {
-    FOREGROUND: colors.themePrimary,
-    FONT_TYPE: "2",
-    ERROR_STRIPE_COLOR: colors.themePrimary,
-  });
-  schema.addAttribute("TYPEDEF", { FOREGROUND: colors.variable });
-  schema.addAttribute("UNMATCHED_BRACE_ATTRIBUTES", { BACKGROUND: "583535" });
   schema.addAttribute("WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES", {
     BACKGROUND: "472C47",
     ERROR_STRIPE_COLOR: "FFCDFF",

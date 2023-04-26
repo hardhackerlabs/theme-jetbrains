@@ -15,7 +15,7 @@ repositories {
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
   pluginName.set("HardHacker Theme")
-  version.set("2022.2.4")
+  version.set("2023.1")
   type.set("IC") // Target IDE Platform
 
   plugins.set(listOf(/* Plugin Dependencies */))
@@ -32,7 +32,7 @@ tasks {
   }
 
   patchPluginXml {
-    sinceBuild.set("222")
+    sinceBuild.set("231")
     untilBuild.set("232.*")
   }
 
