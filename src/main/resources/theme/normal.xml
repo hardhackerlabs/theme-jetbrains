@@ -18,8 +18,11 @@
     <option name="MODIFIED_LINES_COLOR" value="7479ad"/>
     <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="9d945b"/>
     <option name="TAB_UNDERLINE" value="e965a5"/>
-    <option name="ScrollBar.Mac.hoverThumbColor" value="e965a580"/>
+    <option name="ScrollBar.Mac.thumbColor" value="e965a580"/>
     <option name="ScrollBar.Mac.hoverThumbColor" value="e965a5"/>
+    <option name="DOCUMENTATION_COLOR" value="211e2a"/>
+    <option name="LOOKUP_COLOR" value="211e2a"/>
+    <option name="INFORMATION_HINT" value="211e2a"/>
   </colors>
   <attributes>
     <option name="HYPERLINK_ATTRIBUTES">

@@ -32,9 +32,12 @@ function getSchema(name, colorConfig, controlsOpt) {
   schema.addColor("MODIFIED_LINES_COLOR", tinycolor.mix(originColors.black, originColors.blue.clone().saturate(100), 60).toHex());
   schema.addColor("WHITESPACES_MODIFIED_LINES_COLOR", tinycolor.mix(originColors.black, originColors.yellow, 60).toHex());
   schema.addColor("TAB_UNDERLINE", colors.themePrimary);
-  schema.addColor("ScrollBar.Mac.hoverThumbColor", originColors.red.clone().setAlpha(0.5).toHex8());
+  schema.addColor("ScrollBar.Mac.thumbColor", originColors.red.clone().setAlpha(0.5).toHex8());
   schema.addColor("ScrollBar.Mac.hoverThumbColor", colors.themePrimary);
-  
+  schema.addColor("DOCUMENTATION_COLOR", colors.darkerBackground);
+  schema.addColor("LOOKUP_COLOR", colors.darkerBackground);
+  schema.addColor("INFORMATION_HINT", colors.darkerBackground);
+
 
   // attributes
 

@@ -148,6 +148,12 @@
         "informativeBorderColor": "#b1baf4"
       }
     },
+    "NotificationsToolwindow": {
+      "newNotification": {
+        "background": "secondaryBackground",
+        "hoverBackground": "hoverBackground"
+      }
+    },
     "PasswordField": {
       "background": "secondaryBackground"
     },
@@ -180,6 +186,7 @@
       "trackColor": "selectionBackground",
       "progressColor": "accentColor",
       "indeterminateStartColor": "#e192ef",
+      "indeterminateEndColor": "#b1baf4",
       "passedColor": "#b1baf4",
       "passedEndColor": "#b1baf4"
     },

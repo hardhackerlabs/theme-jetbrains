@@ -1,1 +1,1 @@
-rootProject.name = "jetbrains"
+rootProject.name = "hardhacker-theme"

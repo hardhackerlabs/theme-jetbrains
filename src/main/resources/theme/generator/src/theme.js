@@ -165,6 +165,12 @@ function getTheme(name, colorConfig, controlsOpt) {
           informativeBorderColor: c(colors.blue),
         }
       },
+      NotificationsToolwindow: {
+        newNotification: {
+          background: "secondaryBackground",
+          hoverBackground: "hoverBackground",
+        }
+      },
       PasswordField: {
         background: "secondaryBackground"
       },
@@ -197,6 +203,7 @@ function getTheme(name, colorConfig, controlsOpt) {
         trackColor: "selectionBackground",
         progressColor: "accentColor",
         indeterminateStartColor: c(colors.purple),
+        indeterminateEndColor: c(colors.blue),
         passedColor: c(colors.blue),
         passedEndColor: c(colors.blue)
       },
