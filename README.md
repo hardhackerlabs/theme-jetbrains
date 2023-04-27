@@ -8,6 +8,8 @@
 
 ![preview](preview.png)
 
+This is still an early version and it has only been specifically adapted for the IntelliJ New UI.
+
 ## Install
 
-🚧Still in development, not ready for use.🈲
+Search `HardHacker` in Marketplace.

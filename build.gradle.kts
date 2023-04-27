@@ -49,15 +49,14 @@ tasks {
 
     val desc = """
       <p align="center">
-        <a href="https://podcasts.apple.com/au/podcast/%E7%A1%AC%E5%9C%B0%E9%AA%87%E5%AE%A2/id1678465783" rel="nofollow">
-          <img width="180" src="https://github.com/hardhackerlabs/themes/raw/master/media/logo/logo.png" alt="HardHacker" style="max-width: 100%;">
-        </a>
+        <img width="180" src="https://github.com/hardhackerlabs/themes/raw/master/media/logo/logo.png" alt="HardHacker" style="max-width: 100%;">
       </p>
       <h1 align="center">
         HardHacker Themes
       </h1>
       <p>A visually comfortable dark theme that is suitable for prolonged use. It differs from the typical blueish dark themes and aims to express a unique style with a more futuristic color palette.</p>
       <p>The color inspiration comes from some cyberpunk-style art works. However, neon color schemes commonly seen in cyberpunk styles are not suitable for prolonged staring, thus the saturation of the colors has been reduced.</p>
+      <img width="800" src="https://github.com/hardhackerlabs/theme-jetbrains/raw/master/preview.png" alt="HardHacker Theme preview">
     """.trimIndent()
     pluginDescription.set(desc)
   }
