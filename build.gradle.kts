@@ -48,15 +48,19 @@ tasks {
     changeNotes.set(provider { changelog.getLatest().toHTML() })
 
     val desc = """
-      <p align="center">
-        <img width="180" src="https://github.com/hardhackerlabs/themes/raw/master/media/logo/logo.png" alt="HardHacker" style="max-width: 100%;">
-      </p>
-      <h1 align="center">
+      <h1>
         HardHacker Themes
       </h1>
       <p>A visually comfortable dark theme that is suitable for prolonged use. It differs from the typical blueish dark themes and aims to express a unique style with a more futuristic color palette.</p>
-      <p>The color inspiration comes from some cyberpunk-style art works. However, neon color schemes commonly seen in cyberpunk styles are not suitable for prolonged staring, thus the saturation of the colors has been reduced.</p>
-      <img width="800" src="https://github.com/hardhackerlabs/theme-jetbrains/raw/master/preview.png" alt="HardHacker Theme preview">
+      <ul>
+        <li>Color-blind friendly</li>
+        <li>Good readability, meets WCAG AA standard</li>
+        <li>Futuristic</li>
+        <li>Continuously increasing support for editors and tools</li>
+      </ul>
+      <p>
+        Visit our <a href="https://github.com/hardhackerlabs/themes">Github</a> to get HardHacker Themes for other Apps.
+      </p>
     """.trimIndent()
     pluginDescription.set(desc)
   }
