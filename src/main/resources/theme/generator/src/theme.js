@@ -4,7 +4,7 @@ function c(colorStr) {
   return `#${colorStr}`;
 } 
 
-function getTheme(name, colorConfig, controlsOpt) {
+function getTheme(name, schema, colorConfig, controlsOpt) {
   const controls = Object.assign(
     {
       highContrast: false,
@@ -18,7 +18,7 @@ function getTheme(name, colorConfig, controlsOpt) {
     name,
     dark: true,
     author: "HardHacker Labs",
-    editorScheme: "/theme/normal.xml",
+    editorScheme: schema,
     colors: {
       accentColor: c(colors.themePrimary),
       foreground: c(colors.text),

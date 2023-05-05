@@ -56,6 +56,7 @@ tasks {
         <li>Color-blind friendly</li>
         <li>Good readability, meets WCAG AA standard</li>
         <li>Futuristic</li>
+        <li>A darker version</li>
         <li>Continuously increasing support for editors and tools</li>
       </ul>
       <p>
