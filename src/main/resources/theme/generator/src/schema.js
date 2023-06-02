@@ -352,36 +352,6 @@ function getSchema(name, colorConfig, controlsOpt) {
   schema.addAttribute("BASH.EXTERNAL_COMMAND", { FOREGROUND: colors.cyan });
 
   // yml
-  // <option name="YAML_ANCHOR">
-  //     <value>
-  //       <option name="FOREGROUND" value="e965a5" />
-  //     </value>
-  //   </option>
-  //   <option name="YAML_SCALAR_KEY">
-  //     <value>
-  //       <option name="FOREGROUND" value="b3f4f3" />
-  //     </value>
-  //   </option>
-  //   <option name="YAML_SCALAR_LIST">
-  //     <value>
-  //       <option name="FOREGROUND" value="e192ef" />
-  //     </value>
-  //   </option>
-  //   <option name="YAML_SCALAR_VALUE">
-  //     <value>
-  //       <option name="FOREGROUND" value="e192ef" />
-  //     </value>
-  //   </option>
-  //   <option name="YAML_SIGN">
-  //     <value>
-  //       <option name="FOREGROUND" value="eee9fc" />
-  //     </value>
-  //   </option>
-  //   <option name="YAML_TEXT">
-  //     <value>
-  //       <option name="FOREGROUND" value="ebde76" />
-  //     </value>
-  //   </option>
   schema.addAttribute("YAML_ANCHOR", { FOREGROUND: colors.red });
   schema.addAttribute("YAML_SCALAR_KEY", { FOREGROUND: colors.cyan });
   schema.addAttribute("YAML_SCALAR_LIST", { FOREGROUND: colors.purple });
