@@ -7,12 +7,12 @@
     <option name="LINE_NUMBERS_COLOR" value="938aad"/>
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="eee9fc"/>
     <option name="DOC_COMMENT_LINK" value="e192ef"/>
-    <option name="VCS_ANNOTATIONS_COLOR_1" value="e192ef"/>
-    <option name="VCS_ANNOTATIONS_COLOR_2" value="e965a5"/>
-    <option name="VCS_ANNOTATIONS_COLOR_3" value="ebde76"/>
-    <option name="VCS_ANNOTATIONS_COLOR_4" value="b1f2a7"/>
-    <option name="VCS_ANNOTATIONS_COLOR_5" value="b3f4f3"/>
-    <option name="ANNOTATIONS_COLOR" value="282433"/>
+    <option name="VCS_ANNOTATIONS_COLOR_1" value="4d3a59"/>
+    <option name="VCS_ANNOTATIONS_COLOR_2" value="4f314a"/>
+    <option name="VCS_ANNOTATIONS_COLOR_3" value="4f4940"/>
+    <option name="VCS_ANNOTATIONS_COLOR_4" value="434d4a"/>
+    <option name="VCS_ANNOTATIONS_COLOR_5" value="444e59"/>
+    <option name="ANNOTATIONS_COLOR" value="dad5e8"/>
     <option name="ADDED_LINES_COLOR" value="7aa079"/>
     <option name="DELETED_LINES_COLOR" value="a9494f"/>
     <option name="MODIFIED_LINES_COLOR" value="7479ad"/>

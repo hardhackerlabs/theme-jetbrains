@@ -21,12 +21,12 @@ function getSchema(name, colorConfig, controlsOpt) {
   schema.addColor("LINE_NUMBERS_COLOR", colors.secondaryText);
   schema.addColor("LINE_NUMBER_ON_CARET_ROW_COLOR", colors.text);
   schema.addColor("DOC_COMMENT_LINK", colors.purple);
-  schema.addColor("VCS_ANNOTATIONS_COLOR_1", colors.purple);
-  schema.addColor("VCS_ANNOTATIONS_COLOR_2", colors.red);
-  schema.addColor("VCS_ANNOTATIONS_COLOR_3", colors.yellow);
-  schema.addColor("VCS_ANNOTATIONS_COLOR_4", colors.green);
-  schema.addColor("VCS_ANNOTATIONS_COLOR_5", colors.cyan);
-  schema.addColor("ANNOTATIONS_COLOR", colors.black);
+  schema.addColor("VCS_ANNOTATIONS_COLOR_1", tinycolor.mix(originColors.black, originColors.purple, 20).toHex());
+  schema.addColor("VCS_ANNOTATIONS_COLOR_2", tinycolor.mix(originColors.black, originColors.red, 20).toHex());
+  schema.addColor("VCS_ANNOTATIONS_COLOR_3", tinycolor.mix(originColors.black, originColors.yellow, 20).toHex());
+  schema.addColor("VCS_ANNOTATIONS_COLOR_4", tinycolor.mix(originColors.black, originColors.green, 20).toHex());
+  schema.addColor("VCS_ANNOTATIONS_COLOR_5", tinycolor.mix(originColors.black, originColors.cyan, 20).toHex());
+  schema.addColor("ANNOTATIONS_COLOR", tinycolor.mix(originColors.black, originColors.white, 90).toHex());
   schema.addColor("ADDED_LINES_COLOR", tinycolor.mix(originColors.black, originColors.green, 60).toHex());
   schema.addColor("DELETED_LINES_COLOR", tinycolor.mix(originColors.black, originColors.errorRed, 60).toHex());
   schema.addColor("MODIFIED_LINES_COLOR", tinycolor.mix(originColors.black, originColors.blue.clone().saturate(100), 60).toHex());

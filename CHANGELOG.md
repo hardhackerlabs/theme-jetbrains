@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2
+
+* Fix git annotation foreground
+
 ## 0.2.1
 
 * Fix grey action button color
