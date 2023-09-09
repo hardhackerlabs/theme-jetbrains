@@ -102,6 +102,13 @@
         <option name="ERROR_STRIPE_COLOR" value="ebde76"/>
       </value>
     </option>
+    <option name="INFO_ATTRIBUTES">
+      <value>
+        <option name="EFFECT_TYPE" value="2"/>
+        <option name="EFFECT_COLOR" value="80807F"/>
+        <option name="ERROR_STRIPE_COLOR" value="80807F"/>
+      </value>
+    </option>
     <option name="DEPRECATED_ATTRIBUTES">
       <value>
         <option name="EFFECT_TYPE" value="3"/>
@@ -1290,13 +1297,6 @@
       <value>
         <option name="BACKGROUND" value="3C3C57"/>
         <option name="ERROR_STRIPE_COLOR" value="CCCCFF"/>
-      </value>
-    </option>
-    <option name="INFO_ATTRIBUTES">
-      <value>
-        <option name="EFFECT_TYPE" value="2"/>
-        <option name="EFFECT_COLOR" value="333434"/>
-        <option name="ERROR_STRIPE_COLOR" value="FFFFCC"/>
       </value>
     </option>
     <option name="IVAR">

@@ -85,6 +85,11 @@ function getSchema(name, colorConfig, controlsOpt) {
     EFFECT_COLOR: colors.warning,
     ERROR_STRIPE_COLOR: colors.warning,
   });
+  schema.addAttribute("INFO_ATTRIBUTES", {
+    EFFECT_TYPE: "2",
+    EFFECT_COLOR: "80807F",
+    ERROR_STRIPE_COLOR: "80807F",
+  });
   schema.addAttribute("DEPRECATED_ATTRIBUTES", {
     EFFECT_TYPE: "3",
     EFFECT_COLOR: colors.secondaryText,
@@ -547,12 +552,6 @@ function getSchema(name, colorConfig, controlsOpt) {
   schema.addAttribute("IDENTIFIER_UNDER_CARET_ATTRIBUTES", {
     BACKGROUND: "3C3C57",
     ERROR_STRIPE_COLOR: "CCCCFF",
-  });
-  
-  schema.addAttribute("INFO_ATTRIBUTES", {
-    EFFECT_TYPE: "2",
-    EFFECT_COLOR: "333434",
-    ERROR_STRIPE_COLOR: "FFFFCC",
   });
   schema.addAttribute("IVAR", { FOREGROUND: colors.variable });
   schema.addAttribute("JADE_FILE_PATH", { FOREGROUND: colors.string });

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3
+
+* Fix underwaved color for weak warning
+
 ## 0.2.2
 
 * Fix git annotation foreground

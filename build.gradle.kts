@@ -18,7 +18,7 @@ repositories {
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
   pluginName.set("HardHacker Theme")
-  version.set("2023.1")
+  version.set("2023.2")
   type.set("IC") // Target IDE Platform
 
   plugins.set(listOf(/* Plugin Dependencies */))
@@ -64,6 +64,7 @@ tasks {
       </p>
     """.trimIndent()
     pluginDescription.set(desc)
+    changeNotes.set(provider { changelog.getLatest().toHTML() })
   }
 
   signPlugin {
