@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.4
+
+* Upgrade SDKs version
+
 ## 0.2.3
 
 * Fix underwaved color for weak warning
