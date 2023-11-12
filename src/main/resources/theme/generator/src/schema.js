@@ -14,7 +14,7 @@ function getSchema(name, colorConfig, controlsOpt) {
   const schema = new Schema(name, "Darcula", "142");
 
   // colors
-  schema.addColor("SELECTION_BACKGROUND", colors.highlightBackground);
+  schema.addColor("SELECTION_BACKGROUND", colors.selectionBackground);
   schema.addColor("CARET_ROW_COLOR", colors.hoverBackground);
   schema.addColor("CONSOLE_BACKGROUND_KEY", colors.background);
   schema.addColor("GUTTER_BACKGROUND", colors.background);

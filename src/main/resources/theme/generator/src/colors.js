@@ -27,6 +27,7 @@ function getColors(painter) {
   colors = Object.assign(colors, {
     background: colors.black,
     highlightBackground: originColors.black.clone().lighten(10).toHex(),
+    selectionBackground: originColors.black.clone().lighten(20).toHex(),
     darkerBackground: originColors.black.clone().darken(3).toHex(),
     hoverBackground: tinycolor.mix(originColors.black, originColors.black.clone().lighten(20), 20).toHex(),
     text: colors.white,
